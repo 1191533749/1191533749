@@ -199,6 +199,47 @@ function langsCard(langs) {
 `
 }
 
+// 自绘徽章行：和 shields.io 的 flat-square 徽章对齐（高 20、字号 11、方角），
+// 但**画在仓库里**，不依赖任何第三方服务 —— 之前用 shields 的 workflow 徽章在网页上会加载失败。
+function badgesSvg({ version, stars, date }) {
+  const H = 20
+  const GAP = 5
+  const PAD = 6
+  const labelBg = '#4a5260'
+  // 近似字宽：CJK 约 11px，ASCII 约 6.3px（11px Verdana 量级）
+  const tw = (s) =>
+    [...String(s)].reduce((n, ch) => n + (/[\u2e80-\u9fff\u3000-\u303f\uff01-\uff60]/.test(ch) ? 11 : 6.3), 0)
+
+  const pills = [
+    { label: '悠悠音乐', value: version || '未发布', valueBg: C.accent },
+    { label: 'Stars', value: String(stars), valueBg: C.accent2 },
+    { label: '数据卡片', value: `已刷新 ${date}`, valueBg: '#2ea44f' },
+  ]
+
+  let x = 0.5
+  const parts = []
+  for (const p of pills) {
+    const lw = Math.round(tw(p.label) + PAD * 2)
+    const vw = Math.round(tw(p.value) + PAD * 2)
+    parts.push(
+      `<rect x="${x}" y="0.5" width="${lw}" height="${H - 1}" fill="${labelBg}"/>`,
+      `<rect x="${x + lw}" y="0.5" width="${vw}" height="${H - 1}" fill="${p.valueBg}"/>`,
+      `<text x="${(x + lw / 2).toFixed(1)}" y="14" text-anchor="middle">${esc(p.label)}</text>`,
+      `<text x="${(x + lw + vw / 2).toFixed(1)}" y="14" text-anchor="middle">${esc(p.value)}</text>`,
+    )
+    x += lw + vw + GAP
+  }
+  const width = Math.round(x - GAP + 0.5)
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${H}" viewBox="0 0 ${width} ${H}" role="img" aria-label="悠悠音乐 ${esc(version || '')} · Stars ${esc(stars)} · 数据卡片已刷新 ${esc(date)}">
+  <style>
+    text { font-family: Verdana, "DejaVu Sans", "Noto Sans SC", "Microsoft YaHei", sans-serif; font-size: 11px; fill: #fff; }
+  </style>
+  ${parts.join('')}
+</svg>
+`
+}
+
 function streakOf(weeks) {
   const days = weeks.flatMap((w) => w.contributionDays)
   let best = 0
@@ -265,7 +306,20 @@ async function main() {
   await writeFile(join(OUT, 'langs.svg'), langsCard(langs.length ? langs : [{ name: 'TypeScript', size: 1 }]))
   await writeFile(join(OUT, 'contrib.svg'), heatmap(weeks, cc.contributionCalendar.totalContributions))
 
-  console.log(`ok  stars=${stars} forks=${forks} repos=${user.public_repos} followers=${user.followers} commits=${cc.totalCommitContributions} total=${cc.contributionCalendar.totalContributions} langs=${langs.map((l) => l.name).join('/')} size=${size}`)
+  // 徽章行：版本号取悠悠音乐最新 Release，星标取悠悠音乐自己的星数
+  const music = repos.find((r) => r.name === 'youyou-music')
+  let version = ''
+  try {
+    version = (await api(`/repos/${USER}/youyou-music/releases/latest`)).tag_name
+  } catch {
+    version = ''
+  }
+  const date = new Date()
+    .toLocaleDateString('zh-CN', { timeZone: 'Asia/Shanghai', month: '2-digit', day: '2-digit' })
+    .replace('/', '-')
+  await writeFile(join(OUT, 'badges.svg'), badgesSvg({ version, stars: music?.stargazers_count ?? 0, date }))
+
+  console.log(`ok  stars=${stars} forks=${forks} repos=${user.public_repos} followers=${user.followers} commits=${cc.totalCommitContributions} total=${cc.contributionCalendar.totalContributions} langs=${langs.map((l) => l.name).join('/')} size=${size} music=${version}(${music?.stargazers_count ?? 0}★) date=${date}`)
 }
 
 main().catch((err) => {
