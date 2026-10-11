@@ -64,7 +64,6 @@ Electron + React + TypeScript 写的 Windows 客户端，音频后端用 **mpv**
 [![官网](https://img.shields.io/badge/官网-yy.ytw.asia-3b82f6?style=flat-square&logo=googlechrome&logoColor=white)](https://yy.ytw.asia)
 ![License](https://img.shields.io/badge/License-LGPL--3.0-blue?style=flat-square)
 
-<br clear="right" />
 ### 一起听 · 公网中继
 
 悠悠音乐「一起听」的自建服务端：零依赖 Node（只用标准库），TLS + 连接口令、播放同步、聊天与礼物、支付宝当面付充值。
