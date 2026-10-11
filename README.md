@@ -16,7 +16,7 @@
 
 - 现在在做：**[悠悠音乐](https://github.com/1191533749/youyou-music)** —— 一个 Electron + mpv 的 Windows 桌面音乐客户端，扫码登录、每日推荐、桌面歌词、全屏播放页、一起听，带内置更新，已经迭代到 **v0.4.2**
 - 顺手在写：自建公网中继服务（零依赖 Node）、静态官网、各种自动化脚本
-- 常驻地：甘肃 · [剑指网络](https://ytw.asia)
+- 常驻地：甘肃
 
 ## 技术栈
 
@@ -40,10 +40,6 @@
 
 <div align="center">
   <img width="100%" src="assets/contrib.svg" alt="近一年贡献热力图" />
-</div>
-
-<div align="center">
-  <sub>上面三张图是仓库里自己画的 SVG，由 GitHub Actions 每天刷新（<a href="scripts/render-cards.mjs">scripts/render-cards.mjs</a>），不依赖任何第三方图床，所以在哪都能打开。</sub>
 </div>
 
 ## 精选作品
@@ -70,13 +66,6 @@ Electron + React + TypeScript 写的 Windows 客户端，音频后端用 **mpv**
 
 <br clear="right" />
 
-### 微信黑名单管理系统
-
-移动端优先的管理后台：模块分类、图片与视频上传、多用户与权限控制，PHP 实现，跑在自己的服务器上。
-
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-
 ### 一起听 · 公网中继
 
 悠悠音乐「一起听」的自建服务端：零依赖 Node（只用标准库），TLS + 连接口令、播放同步、聊天与礼物、支付宝当面付充值。
@@ -84,8 +73,8 @@ Electron + React + TypeScript 写的 Windows 客户端，音频后端用 **mpv**
 
 ## 联系
 
-- 官网：<https://ytw.asia> · 悠悠音乐：<https://yy.ytw.asia>
-- 微信公众号（悠悠音乐更新与下载）：
+- 悠悠音乐：<https://yy.ytw.asia>
+- 微信公众号：
 
 <img width="200" src="https://github.com/user-attachments/assets/a4dc29e5-69a5-4ab8-9f9a-cd88e053c154" alt="微信公众号" />
 
