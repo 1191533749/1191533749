@@ -1,0 +1,47 @@
+name: 刷新主页数据卡片
+
+on:
+  schedule:
+    # 每天 21:17 UTC（北京时间次日 05:17）
+    - cron: '17 21 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/render-cards.mjs'
+      - '.github/workflows/cards.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 生成数据卡片
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+        run: node scripts/render-cards.mjs
+
+      - name: 提交变更
+        run: |
+          if git diff --quiet -- assets; then
+            echo "卡片没有变化，跳过提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/langs.svg assets/contrib.svg
+          git commit -m "chore: 刷新数据卡片"
+          git push
