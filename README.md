@@ -44,10 +44,6 @@
   <img width="100%" src="assets/contrib.svg" alt="近一年贡献热力图" />
 </div>
 
-<div align="center">
-  <sub>上面三张图是仓库里自己画的 SVG，由 GitHub Actions 每天刷新（<a href="scripts/render-cards.mjs">scripts/render-cards.mjs</a>），不依赖任何第三方图床，所以在哪都能打开。</sub>
-</div>
-
 ## 精选作品
 
 ### 悠悠音乐 · Windows 桌面音乐客户端
