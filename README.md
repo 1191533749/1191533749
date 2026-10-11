@@ -6,9 +6,7 @@
 
 <div align="center">
   <a href="https://yy.ytw.asia"><img src="https://img.shields.io/badge/官网-yy.ytw.asia-ff6a3d?style=flat-square&logo=googlechrome&logoColor=white" alt="官网" /></a>
-  <a href="https://github.com/1191533749/youyou-music/releases/latest"><img src="https://img.shields.io/github/v/release/1191533749/youyou-music?style=flat-square&label=%E6%82%A0%E6%82%A0%E9%9F%B3%E4%B9%90&color=ff6a3d" alt="最新版本" /></a>
-  <a href="https://github.com/1191533749/youyou-music"><img src="https://img.shields.io/github/stars/1191533749/youyou-music?style=flat-square&label=Stars&color=ffb347" alt="stars" /></a>
-  <a href="https://github.com/1191533749/1191533749/actions/workflows/cards.yml"><img src="https://img.shields.io/github/actions/workflow/status/1191533749/1191533749/cards.yml?style=flat-square&label=%E5%8D%A1%E7%89%87%E5%88%B7%E6%96%B0" alt="卡片刷新" /></a>
+  <a href="https://github.com/1191533749/youyou-music"><img src="assets/badges.svg" alt="悠悠音乐 · Stars · 数据卡片" /></a>
 </div>
 
 ## 关于我
@@ -18,7 +16,7 @@
 
 - 现在在做：**[悠悠音乐](https://github.com/1191533749/youyou-music)** —— 一个 Electron + mpv 的 Windows 桌面音乐客户端，扫码登录、每日推荐、桌面歌词、全屏播放页、一起听，带内置更新，已经迭代到 **v0.4.2**
 - 顺手在写：自建公网中继服务（零依赖 Node）、静态官网、各种自动化脚本
-- 常驻地：甘肃
+- 常驻地：甘肃 · [剑指网络](https://ytw.asia)
 
 ## 技术栈
 
@@ -42,6 +40,10 @@
 
 <div align="center">
   <img width="100%" src="assets/contrib.svg" alt="近一年贡献热力图" />
+</div>
+
+<div align="center">
+  <sub>上面三张图是仓库里自己画的 SVG，由 GitHub Actions 每天刷新（<a href="scripts/render-cards.mjs">scripts/render-cards.mjs</a>），不依赖任何第三方图床，所以在哪都能打开。</sub>
 </div>
 
 ## 精选作品
