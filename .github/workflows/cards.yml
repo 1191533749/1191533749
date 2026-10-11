@@ -42,6 +42,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats.svg assets/langs.svg assets/contrib.svg
+          git add assets/stats.svg assets/langs.svg assets/contrib.svg assets/badges.svg
           git commit -m "chore: 刷新数据卡片"
           git push
