@@ -18,7 +18,7 @@
 
 - 现在在做：**[悠悠音乐](https://github.com/1191533749/youyou-music)** —— 一个 Electron + mpv 的 Windows 桌面音乐客户端，扫码登录、每日推荐、桌面歌词、全屏播放页、一起听，带内置更新，已经迭代到 **v0.4.2**
 - 顺手在写：自建公网中继服务（零依赖 Node）、静态官网、各种自动化脚本
-- 常驻地：甘肃 · [剑指网络](https://ytw.asia)
+- 所属：[剑指网络](https://ytw.asia)
 
 ## 技术栈
 
@@ -36,17 +36,16 @@
 ## 数据
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=1191533749&show_icons=true&hide_border=true&theme=tokyonight&include_all_commits=true&count_private=true&locale=cn" alt="GitHub Stats" />
-  <img height="170" src="https://streak-stats.demolab.com?user=1191533749&theme=tokyonight&hide_border=true&date_format=Y.n.j" alt="Streak" />
+  <img height="205" src="assets/stats.svg" alt="GitHub 数据" />
+  <img height="205" src="assets/langs.svg" alt="主要语言" />
 </div>
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=1191533749&layout=compact&hide_border=true&theme=tokyonight&langs_count=8&locale=cn" alt="Top Languages" />
-  <img height="165" src="https://github-profile-trophy.vercel.app/?username=1191533749&theme=tokyonight&no-frame=true&no-bg=true&column=4&margin-w=8&margin-h=8" alt="Trophy" />
+  <img width="100%" src="assets/contrib.svg" alt="近一年贡献热力图" />
 </div>
 
 <div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=1191533749&theme=tokyo-night&hide_border=true&area=true&height=280" alt="Activity Graph" />
+  <sub>上面三张图是仓库里自己画的 SVG，由 GitHub Actions 每天刷新（<a href="scripts/render-cards.mjs">scripts/render-cards.mjs</a>），不依赖任何第三方图床，所以在哪都能打开。</sub>
 </div>
 
 ## 精选作品
