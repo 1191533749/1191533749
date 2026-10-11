@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="210" viewBox="0 0 495 210" role="img" aria-label="GitHub 数据">
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", Roboto, sans-serif; }
+    .lbl { font-size: 13px; fill: #93a0b4; }
+    .val { font-size: 20px; font-weight: 700; fill: #eef2f8; }
+  </style>
+  <rect x="0.5" y="0.5" width="494" height="209" rx="12" fill="#171b24" stroke="#262c3a"/>
+  <text x="22" y="34" class="t" font-size="14" font-weight="700" fill="#eef2f8">小鱼 的 GitHub 数据</text>
+  <line x1="22" y1="48" x2="473" y2="48" stroke="#262c3a"/>
+  <g>
+    <circle cx="404" cy="118" r="34" fill="none" stroke="#20252f" stroke-width="9"/>
+    <circle cx="404" cy="118" r="34" fill="none" stroke="#ff6a3d" stroke-width="9" stroke-linecap="round"
+      stroke-dasharray="119.6 213.6" transform="rotate(-90 404 118)"/>
+    <text x="404" y="114" class="t" font-size="22" font-weight="700" fill="#eef2f8" text-anchor="middle">56</text>
+    <text x="404" y="132" class="t" font-size="10" fill="#93a0b4" text-anchor="middle">活跃度</text>
+  </g>
+  <g class="t">
+    <text x="22" y="92" class="lbl">公开仓库</text><text x="150" y="92" class="val">13</text><text x="22" y="122" class="lbl">累计星标</text><text x="150" y="122" class="val">1</text><text x="22" y="152" class="lbl">关注者</text><text x="150" y="152" class="val">4</text><text x="22" y="182" class="lbl">近一年提交</text><text x="150" y="182" class="val">65</text>
+  </g>
+  <text x="22" y="200" class="t" font-size="11" fill="#93a0b4">近一年贡献 74 次 · 最长连续 3 天 · 语言 14 种</text>
+</svg>
