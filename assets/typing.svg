@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="34" viewBox="0 0 700 34" role="img" aria-label="status">
-  <text x="14" y="23" font-family="'Cascadia Code','Consolas',monospace" font-size="17" fill="#ff6a3d">&gt;</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="36" viewBox="0 0 700 36" role="img" aria-label="status">
+  <rect x="0.5" y="0.5" width="699" height="35" rx="10" fill="#12151c" stroke="#262c3a"/>
+  <text x="16" y="24" font-family="'Cascadia Code','Consolas',monospace" font-size="17" fill="#ff6a3d">&gt;</text>
   <g font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif" font-size="17">
-    <text x="38" y="23" fill="#dbe4f0">
+    <text x="36" y="24" fill="#dbe4f0">
       <tspan>把想法做成能跑起来、能发布、能更新的产品</tspan>
       <animate attributeName="opacity" values="1;1;0;0;0;0" keyTimes="0;0.30;0.34;0.63;0.67;1" dur="15s" repeatCount="indefinite"/>
     </text>
-    <text x="38" y="23" fill="#dbe4f0" opacity="0">
+    <text x="36" y="24" fill="#dbe4f0" opacity="0">
       <tspan>Electron + React + TypeScript，音频交给 mpv</tspan>
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.30;0.34;0.63;0.67;1" dur="15s" repeatCount="indefinite"/>
     </text>
-    <text x="38" y="23" fill="#dbe4f0" opacity="0">
+    <text x="36" y="24" fill="#dbe4f0" opacity="0">
       <tspan>不做演示项目，做真的有人在用的软件</tspan>
       <animate attributeName="opacity" values="0;0;0;0;1;1" keyTimes="0;0.30;0.34;0.63;0.67;1" dur="15s" repeatCount="indefinite"/>
     </text>
