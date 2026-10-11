@@ -8,7 +8,7 @@
   <a href="https://yy.ytw.asia"><img src="https://img.shields.io/badge/官网-yy.ytw.asia-ff6a3d?style=flat-square&logo=googlechrome&logoColor=white" alt="官网" /></a>
   <a href="https://github.com/1191533749/youyou-music/releases/latest"><img src="https://img.shields.io/github/v/release/1191533749/youyou-music?style=flat-square&label=%E6%82%A0%E6%82%A0%E9%9F%B3%E4%B9%90&color=ff6a3d" alt="最新版本" /></a>
   <a href="https://github.com/1191533749/youyou-music"><img src="https://img.shields.io/github/stars/1191533749/youyou-music?style=flat-square&label=Stars&color=ffb347" alt="stars" /></a>
-  <img src="https://komarev.com/ghpvc/?username=1191533749&style=flat-square&color=3b82f6&label=%E8%AE%BF%E9%97%AE" alt="访问量" />
+  <a href="https://github.com/1191533749/1191533749/actions/workflows/cards.yml"><img src="https://img.shields.io/github/actions/workflow/status/1191533749/1191533749/cards.yml?style=flat-square&label=%E5%8D%A1%E7%89%87%E5%88%B7%E6%96%B0" alt="卡片刷新" /></a>
 </div>
 
 ## 关于我
@@ -36,8 +36,8 @@
 ## 数据
 
 <div align="center">
-  <img height="205" src="assets/stats.svg" alt="GitHub 数据" />
-  <img height="205" src="assets/langs.svg" alt="主要语言" />
+  <img height="176" src="assets/stats.svg" alt="GitHub 数据" />
+  <img height="176" src="assets/langs.svg" alt="主要语言" />
 </div>
 
 <div align="center">
