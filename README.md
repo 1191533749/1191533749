@@ -14,7 +14,7 @@
 独立开发，**全栈**。做 Windows 桌面客户端、Web 前端与 Node 服务端，喜欢把接口、音视频和系统层的东西一直做到能用、好用。
 不写演示项目——写的是装上就会天天用的软件。
 
-- 现在在做：**[悠悠音乐](https://github.com/1191533749/youyou-music)** —— 一个 Electron + mpv 的 Windows 桌面音乐客户端，扫码登录、每日推荐、桌面歌词、全屏播放页、一起听、精简模式悬浮条、自定义图片/视频背景，带内置更新，已经迭代到 **v0.4.3**
+- 现在在做：**[悠悠音乐](https://github.com/1191533749/youyou-music)** —— 一个 Electron + mpv 的 Windows 桌面音乐客户端，扫码登录、每日推荐、桌面歌词、全屏播放页、一起听、精简模式悬浮条、自定义图片/视频背景，带内置更新，已经迭代到 **v0.4.4**
 - 顺手在写：自建公网中继服务（零依赖 Node）、静态官网、各种自动化脚本
 - 常驻地：甘肃
 
@@ -57,7 +57,7 @@ Electron + React + TypeScript 写的 Windows 客户端，音频后端用 **mpv**
 - **完整音源自动补齐**：拿不到完整音频时按「时长 ±5 秒 / 歌名归一化相同 / 版本标记一致 / 歌手命中」四条全中才换源，宁可跳过也不播半截、不播翻唱
 - **音质不虚报**：达不到所选档位就降档，并按 mpv 报出的**真实码率**显示实际档位
 - **播放失败绝不跳歌**：原地换音源 / 换档位 / 换 CDN 主机重试
-- **内置更新**：启动检测 Release，便携版自替换、安装版静默安装；更新失败兜底打开官网
+- **内置更新**：启动检测更新，按「自建镜像 → GitHub → 官网」自动降级；便携版自替换、安装版静默安装
 
 [![源码](https://img.shields.io/badge/源码-youyou--music-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/1191533749/youyou-music)
 [![下载](https://img.shields.io/badge/下载-最新版%20Release-ff6a3d?style=flat-square&logo=github&logoColor=white)](https://github.com/1191533749/youyou-music/releases/latest)
