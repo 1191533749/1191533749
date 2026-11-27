@@ -82,7 +82,7 @@
       <text x="20" y="66" fill="#7c8798">$ npm run dist</text>
       <text x="20" y="94" fill="#28c840">✓ build  main + renderer</text>
       <text x="20" y="122" fill="#28c840">✓ smoke  窗口 / IPC / mpv</text>
-      <text x="20" y="150" fill="#ffb347">→ 悠悠音乐便携版0.4.2.exe</text>
+      <text x="20" y="150" fill="#ffb347">→ 悠悠音乐便携版0.6.0.exe</text>
     </g>
     <rect x="20" y="162" width="9" height="16" fill="#ff6a3d">
       <animate attributeName="opacity" values="1;1;0;0;1" dur="1.2s" repeatCount="indefinite"/>
