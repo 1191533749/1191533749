@@ -56,8 +56,8 @@
 
 ### 微信黑名单管理系统
 
-[![仓库](https://img.shields.io/badge/仓库-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/1191533749)
-![PHP](https://img.shields.io/badge/PHP-8.x-777BB4?style=flat-square&logo=php&logoColor=white)
+[![仓库](https://img.shields.io/badge/仓库-微信黑名单管理系统-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/1191533749/-)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
 
 移动端优先的黑名单管理平台：模块分类、图片与视频上传、多用户权限隔离。给真实运营用的后台，不是课程作业。
 
